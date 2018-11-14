@@ -1,6 +1,8 @@
-@page {
-    padding: 10mm;
-    margin: 0
+@media print {
+    @page {
+        padding: 10mm;
+        margin: 0;
+    }
 }
 
 @media screen {
@@ -35,85 +37,108 @@ h1 {
     margin-top: 0;
 }
 
+h2 {
+    font-size: 1rem;
+}
+
 /* if not specified, li markers should be disc. */
 ul {
     list-style-type: disc;
     padding-left: 2rem;
 }
 
-/* all section's first level ul should not have markers nor paddings. */
-section > ul {
-    list-style: none;
+sup {
+    vertical-align: baseline;
+}
+
+.list {
     padding: 0;
 }
 
-section > ul > li {
+.list--bare {
+    list-style: none;
+}
+
+.list--columned {
+    column-count: 2;
+}
+
+.event {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: baseline;
     margin: 0.5em 0;
 }
 
-/* but the experiences section can be hard to read if no marker */
-section[data-role=experiences] > ul > li {
-    margin-left: -10mm;
-    padding-left: 9mm;
-    border-left: 1mm solid black;
-}
-
-/* put detail before interval. */
-[data-role=detail] {
-    order: 1;
-    width: 160mm;
-}
-
-[data-role=interval] {
+.event__interval {
     order: 2;
     font-weight: 900;
     white-space: nowrap;
 }
 
-/* header section should be tailored specially. */
-section[data-role=general] {
+.event__detail {
+    order: 1;
+    max-width: 162mm;
+}
+
+.event--highlighted {
+    border-left: 1mm solid black;
+    margin-left: -10mm;
+    padding-left: 9mm;
+}
+
+.event--compact {
+    margin: 0;
+    display: list-item;
+    list-style-type: disc;
+}
+
+.event--compact .event__interval {
+    order: 1;
+    font-weight: 900;
+}
+
+.event--compact .event__detail {
+    order: 2;
+}
+
+.courses {
+    column-count: 2;
+    column-rule: 0.1mm solid black;
+    padding-left: 0;
+}
+
+.course {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0;
+}
+
+.general {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
 }
 
-section[data-role=general] [data-role=name] {
+.general__name {
     font-size: 2rem;
 }
 
-section[data-role=general] [data-role=other] {
+.general__other {
     list-style: none;
-    margin: 0
-}
-
-/* main courses should be columned to save paper space. */
-section[data-role=education] > ul[data-role=courses] {
-    column-count: 2;
-    column-rule: 0.1mm solid black;
-}
-
-section[data-role=education] > ul[data-role=courses] > li {
     margin: 0;
-    align-items: flex-end;
 }
 
-section[data-role=education] h2 {
-    font-size: 1rem;
-}
-
-ul[data-role=skills] {
-    column-count: 2;
-}
-
-ul[data-role=skills] > li {
+.skill {
     display: block;
-    margin-top: 0;
 }
 
-ul[data-role=skills] > li h2 {
-    font-size: 1rem;
-    margin-top: 0;
+.skill__category {
+    margin: 0;
+}
+
+.skill__list {
+    margin: 0.5em 0;
+    list-style-type: disc;
 }
