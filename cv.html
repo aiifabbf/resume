@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Shi Yuchen</title>
     <link rel="stylesheet" href="cv.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
 </head>
 
 <body>
@@ -22,17 +24,21 @@
         <h1>Education</h1>
         <ul class="list list--bare">
             <li class="event">
-                <span class="event__interval">2015-<br>2019</span>
-                <span class="event__detail">Bachelor major in Integrated Circuit Design and Integrated System (honor), <br>in
-                    Huazhong University of Science and Technology, Wuhan, China, <br>with current weighted average
-                    <strong>89.1/100</strong> and GPA 3.89/4.00.</span>
+                <span class="event__interval">Sep 2019-<br></span>
+                <span class="event__detail">Master of Science in Computer Engineering, <br>in
+                    Northwestern University, Evanston, IL, US</span>
             </li>
             <li class="event">
+                <span class="event__interval">Sep 2015-<br>Jun 2019</span>
+                <span class="event__detail">Bachelor major in Integrated Circuit Design and Integrated System, <br>in
+                    Huazhong University of Science and Technology, Wuhan, China</span>
+            </li>
+            <!-- <li class="event">
                 <span class="event__interval">Aug 2016</span>
                 <span class="event__detail">
                     Summer session on <i>Perspectives in the Humanities</i>, University of California, Berkeley.
                 </span>
-            </li>
+            </li> -->
         </ul>
         <!-- <h2>Main Courses</h2>
         <ul class="courses">
@@ -61,40 +67,79 @@
                 <span class="course__score">98</span>
             </li>
         </ul> -->
-        
+
     </section>
 
     <section>
         <h1>Experiences</h1>
         <ul class="list list--bare">
             <li class="event event--highlighted">
-                <span class="event__interval">Oct 2017-</span>
+                <span class="event__interval">Sep 2016-<br>May 2019</span>
+                <span class="event__detail">
+                    Web developer, Students' Association Union of HUST.
+                    <ul class="tasks">
+                        <li>Design and code for union's administration dashboard frontend serving 100+ union members
+                        </li>
+                        <li>Full client-side rendering, full AJAX, single-page application using Vue.js and Page.js</li>
+                        <li>RESTful API design and implementation using Flask and SQLAlchemy, <br>cooperatively with
+                            backend developers</li>
+                    </ul>
+                </span>
+            </li>
+            <li class="event event--highlighted">
+                <span class="event__interval">Oct 2017-<br>Apr 2019</span>
                 <span class="event__detail">
                     <a href="https://aiifabbf.github.io/cv/lab-zhu" class="href">
-                        Undergraduate research on spectrum analysis of photoacoustic imaging, at Prof. Benpeng Zhu’s,
-                        College of Optical and Electronic Information, HUST. A nation-financed project.
+                        Undergraduate research on spectrum analysis of photoacoustic imaging, A nation-financed project,
+                        <br>under supervision of Prof. Benpeng Zhu,
+                        College of Optical and Electronic Information, HUST.
                         <ul class="tasks">
-                            <li>image preprocessing: noise filter, transform and normalization</li>
-                            <li>statistical feature extraction, image discretization and reconstruction</li>
-                            <li>code optimization, refactoring and language migration from Matlab to Python</li>
+                            <!-- <li>Code for image preprocessing: noise filter, transform and normalization</li>
+                            <li>Code for statistical feature extraction, image discretization and reconstruction</li> -->
+                            <li>Code for automated image processing and statistical feature extraction</li>
+                            <li>10x speed up with parallel and vectorized computing</li>
+                            <li>Migrate codebase from Matlab to Python</li>
                         </ul>
                     </a>
                 </span>
             </li>
             <li class="event event--highlighted">
-                <span class="event__interval">Mar 2018-</span>
+                <span class="event__interval">Oct 2018-<br>Mar 2019</span>
+                <span class="event__detail">
+                    Project on analog circuit design automation and EDA tools, <br>under supervision of Prof. Min
+                    Tan, College of Optical and Electronic Information, HUST.
+                    <ul class="tasks">
+                        <li>Build tools in Python to
+                            <ul>
+                                <li>parse circuit netlist files</li>
+                                <li>generate simulation commands and call simulators</li>
+                                <li>analyze waves and results from simulators in real time (~50 μs)</li>
+                                <li>approach towards optimal parameters using Scipy</li>
+                            </ul>
+                        </li>
+                        <li>Verify effectiveness on 9 modern two-stage amplifiers</li>
+                        <li>Make it a lightweight framework* for future use</li>
+                    </ul>
+                    * sizer: <a href="http://github.com/aiifabbf/sizer"><span class="mail__link">http://github.com/aiifabbf/sizer</span></a>
+                </span>
+            </li>
+            <li class="event event--highlighted">
+                <span class="event__interval">Mar 2018-<br>Apr 2019</span>
                 <span class="event__detail">
                     <a href="https://aiifabbf.github.io/cv/lab-fu" class="href">
-                        Undergraduate research on high thermal conductivity and high permittivity film, at Prof. Qiuyun
-                        Fu’s, College of Optical and Electronic Information, HUST.
+                        Undergraduate research on high thermal conductivity and high permittivity film, <br>under
+                        supervision of Prof. Qiuyun
+                        Fu, College of Optical and Electronic Information, HUST.
                         <ul class="tasks">
-                            <li>numeric simulation on the temperature field and its evolution through time</li>
-                            <li>dynamic data visualization</li>
+                            <li>Home-made code for numeric simulation on temperature field</li>
+                            <li>Animated 2D and 3D visualization of temperature field through time*</li>
+                            <li>Co-authored paper under review</li>
                         </ul>
+                        * Jupyter notebook demo: <a href="https://aiifabbf.github.io/cv/lab-fu/"><span class="mail__link">https://aiifabbf.github.io/cv/lab-fu/</span></a>
                     </a>
                 </span>
             </li>
-            <li class="event event--highlighted">
+            <!-- <li class="event event--highlighted">
                 <span class="event__interval">Feb 2017-<br>Oct 2017</span>
                 <span class="event__detail">
                     Undergraduate research on hybrid-supply modulator and two-stage analog amplifiers, at Prof. Min
@@ -105,30 +150,20 @@
                         <li>schematic simulation to verify manual analysis</li>
                     </ul>
                 </span>
-            </li>
-            <li class="event event--highlighted">
-                <span class="event__interval">Sep 2016-</span>
-                <span class="event__detail">
-                    Web engineer, Students' Association Union of HUST.
-                    <ul class="tasks">
-                        <li>Full client-side rendering, single-page application using Vue.js</li>
-                        <li>RESTful API design and implementation using Flask and SQLAlchemy</li>
-                    </ul>
-                </span>
-            </li>
+            </li> -->
             <li class="event event--highlighted">
                 <span class="event__interval">Jan 2018</span>
                 <span class="event__detail">
                     Volunteer as a Teaching Assistant at EF Education First Ltd.
                 </span>
             </li>
-            <li class="event event--highlighted">
+            <!-- <li class="event event--highlighted">
                 <span class="event__interval">Jul 2018</span>
                 <span class="event__detail">
                     Summer camp at 
                     Shanghai Institute of Microsystem and Information Technology
                 </span>
-            </li>
+            </li> -->
         </ul>
     </section>
 
@@ -136,21 +171,21 @@
         <h1>Awards</h1>
         <ul class="list list--bare">
             <li class="event">
-                <span class="event__interval">Aug 2018</span>
+                <span class="event__interval">Sep 2016</span>
                 <span class="event__detail">
-                    National College IC Design Contest on 28-39 GHz phase-locked loop, 2nd prize.
+                    Scholarship for Excellence in Academics, College of Optical and Electronic Information, HUST.
                 </span>
             </li>
-            <li class="event">
+            <!-- <li class="event">
                 <span class="event__interval">Apr 2018</span>
                 <span class="event__detail">
                     Mathematical Modeling Contest in Middle China, 3rd prize.
                 </span>
-            </li>
+            </li> -->
             <li class="event">
-                <span class="event__interval">Sep 2016</span>
+                <span class="event__interval">Aug 2018</span>
                 <span class="event__detail">
-                    Advances in Academics Scholarship, College of Optical and Electronic Information, HUST.
+                    National College Integrated Circuit Design Contest on 28-39 GHz phase-locked loop, 2nd prize.
                 </span>
             </li>
         </ul>
@@ -162,19 +197,20 @@
             <li class="skill">
                 <h2 class="skill__category">Programming Languages</h2>
                 <ul class="skill__list">
-                    <li>Python, C, JavaScript, Rust</li>
+                    <li>Python, C, JavaScript, Java, Rust</li>
                     <li>LaTeX, TeX, SQL, HTML, CSS</li>
+                    <li>Leetcode weekly contest enthusiast (top 5%)</li>
                 </ul>
             </li>
             <li class="skill">
-                <h2 class="skill__category">Scientific Computing in Python</h2>
+                <h2 class="skill__category">Scientific Computing</h2>
                 <ul class="skill__list">
                     <li>Data manipulation with Numpy, Scipy and Pandas</li>
                     <li>Data visualization with Matplotlib</li>
                     <li>Parallel and distributed computing</li>
                 </ul>
             </li>
-            <li class="skill">
+            <!-- <li class="skill">
                 <h2 class="skill__category">VLSI Design</h2>
                 <ul class="skill__list">
                     <li>Schematic simulation with Cadence Virtuoso</li>
@@ -197,22 +233,28 @@
                         <span class="event__detail">IELTS 7.0</span>
                     </li>
                 </ul>
-            </li>
+            </li> -->
         </ul>
     </section>
 
-    <section>
+    <!-- <section>
         <h1>Publications</h1>
         <ol class="bibliography">
             <li class="bibliography__item">
                 <span class="bibliography__item__detail">
-                    <a href="http://oversea.cnki.net/kcms/detail/detail.aspx?recid=&FileName=XYYZ201803009&DbName=CJFDLAST2018&DbCode=CJFD&uid=WEEvREcwSlJHSldRa1FhcEE0RVVzS0gvZW9hamxSZ2VEcWJKMXBDalhPTT0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4IQMovwHtwkF4VYPoHbKxJw!!">
-                        CHEN Yuheng, <strong>SHI Yuchen</strong>, et al., "Discussion on issues and countermeasures for the habitat of sockeye salmon in Cultus Lake," <i>Fishery Information & Strategy, </i>2018.
+                    <a
+                        href="http://oversea.cnki.net/kcms/detail/detail.aspx?recid=&FileName=XYYZ201803009&DbName=CJFDLAST2018&DbCode=CJFD&uid=WEEvREcwSlJHSldRa1FhcEE0RVVzS0gvZW9hamxSZ2VEcWJKMXBDalhPTT0=$9A4hF_YAuvQ5obgVAqNKPCYcEjKensW4IQMovwHtwkF4VYPoHbKxJw!!">
+                        CHEN Yuheng, <strong>SHI Yuchen</strong>, et al., "Discussion on issues and countermeasures for
+                        the habitat of sockeye salmon in Cultus Lake," <i>Fishery Information & Strategy, </i>2018,
+                        33(03):215-222.
                     </a>
                 </span>
             </li>
         </ol>
-    </section>
+    </section> -->
+    <script>
+        window.onload = window.print;
+    </script>
 </body>
 
 </html>
