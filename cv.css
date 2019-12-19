@@ -19,7 +19,7 @@
 
     /* scratch outline on for debugging. */
     *, *:before, *:after {
-        outline: 1px solid black;
+        outline: 1px solid gray;
     }
 }
 
