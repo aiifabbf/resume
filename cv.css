@@ -25,7 +25,7 @@
 
 html {
     font-size: 10pt;
-    font-family: 'Computer Modern Serif', Courier, monospace;
+    font-family: 'Computer Modern Serif', serif;
     margin: 0;
     padding: 0;
 }
@@ -37,6 +37,7 @@ body {
 a {
     text-decoration: none;
     color: black;
+    font-family: 'Ubuntu Mono', monospace;
 }
 
 h1 {
@@ -57,8 +58,13 @@ sup {
     vertical-align: baseline;
 }
 
+code {
+    font-family: 'Ubuntu Mono', monospace;
+}
+
 .list {
     padding: 0;
+    list-style-position: inside;
 }
 
 .list--bare {
@@ -88,7 +94,7 @@ sup {
 }
 
 .event--highlighted {
-    border-left: 1mm solid black;
+    border-left: 1mm solid gray;
     margin-left: -10mm;
     padding-left: 9mm;
 }
@@ -125,6 +131,7 @@ sup {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    position: relative;
 }
 
 .general__name {
@@ -135,10 +142,13 @@ sup {
     list-style: none;
     margin: 0;
     text-align: right;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 .mail__link, .site__link {
-    font-family: 'Computer Modern Mono', 'Courier New', Courier, monospace;
+    font-family: 'Ubuntu Mono', 'Courier New', Courier, monospace;
 }
 
 .skill {
