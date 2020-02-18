@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>施宇晨</title>
+    <link rel="stylesheet" href="cv.css">
     <link rel="stylesheet" href="cv-zh.css">
 </head>
 
@@ -13,8 +14,12 @@
     <section class="general">
         <h1 class="general__name">施宇晨</h1>
         <ul class="general__other">
-            <li class="mail"><a href="mailto:aiifabbf@outlook.com" class="mail__link">aiifabbf@outlook.com</a></li>
-            <li class="site"><a href="https://aiifabbf.github.io" class="site__link">aiifabbf.github.io</a></li>
+            <!-- <li class="mail"><a href="mailto: aiifabbf@outlook.com" class="mail__link">aiifabbf@outlook.com</a></li> -->
+            <li class="mail"><a href="mailto:yuchenshi2021@u.northwestern.edu"
+                    class="mail__link">yuchenshi2021@u.northwestern.edu</a></li>
+            <li class="site"><a href="https://github.com/aiifabbf" class="site__link">github.com/aiifabbf</a></li>
+            <li class="phone">+1 773 273 1231</li>
+            <li class="address">1930 Ridge Ave, Evanston IL, 60201</li>
         </ul>
     </section>
 
@@ -22,13 +27,17 @@
         <h1>学历</h1>
         <ul class="list list--bare">
             <li class="event">
-                <span class="event__interval">2015-2019</span>
-                <span class="event__detail">集成电路与集成系统，华中科技大学，GPA 89.1/100</span>
+                <span class="event__interval">2019/9-2020/12</span>
+                <span class="event__detail">计算机工程，硕士，美国西北大学，GPA 3.75/4.00</span>
+            </li>
+            <li class="event">
+                <span class="event__interval">2015/9-2019/6</span>
+                <span class="event__detail">集成电路与集成系统，本科，华中科技大学，GPA 89.1/100</span>
             </li>
         </ul>
         <h2>主要课程</h2>
         <ul class="courses">
-            <li class="course">
+            <!-- <li class="course">
                 <span class="course__name">计算机组成原理</span>
                 <span class="course__score">94</span>
             </li>
@@ -63,6 +72,38 @@
             <li class="course">
                 <span class="course__name">量子力学</span>
                 <span class="course__score">94</span>
+            </li> -->
+            <li class="course">
+                <span class="course__name">计算机图形学</span>
+                <span class="course__score">A</span>
+            </li>
+            <li class="course">
+                <span class="course__name">数据库</span>
+                <span class="course__score">A</span>
+            </li>
+            <li class="course">
+                <span class="course__name">算法</span>
+                <span class="course__score">B</span>
+            </li>
+            <li class="course">
+                <span class="course__name">机器学习</span>
+                <span class="course__score">A</span>
+            </li>
+            <li class="course">
+                <span class="course__name">操作系统</span>
+                <span class="course__score">在上</span>
+            </li>
+            <li class="course">
+                <span class="course__name">编译器</span>
+                <span class="course__score">在上</span>
+            </li>
+            <li class="course">
+                <span class="course__name">计算机网络</span>
+                <span class="course__score">在上</span>
+            </li>
+            <li class="course">
+                <span class="course__name">深度学习</span>
+                <span class="course__score">在上</span>
             </li>
         </ul>
 
@@ -72,43 +113,104 @@
         <h1>经历</h1>
         <ul class="list list--bare">
             <li class="event event--highlighted">
-                <span class="event__interval">2016/9-</span>
+                <span class="event__interval">2016/9<br>-2019/5</span>
                 <span class="event__detail">
-                    前后端开发*，华中科技大学社团联合会
+                    前后端开发，华中科技大学社团联合会
                     <ul class="tasks">
                         <li>Vue.js实现社团联合会后台管理系统SPA：page.js实现页面路由、资源全异步加载、响应式布局</li>
                         <li>RESTful API设计：资源划分、权限检验，使用Flask和Blueprint实现</li>
                     </ul>
-                    *项目仓库 <a
-                        href="https://github.com/aiifabbf/aunet-flask/tree/Home">https://github.com/aiifabbf/aunet-flask/tree/Home</a>
+                    <!-- *项目仓库 <a
+                        href="https://github.com/aiifabbf/aunet-flask/tree/Home">https://github.com/aiifabbf/aunet-flask/tree/Home</a> -->
                 </span>
             </li>
             <li class="event event--highlighted">
-                <span class="event__interval">2017/10-2019/3</span>
+                <span class="event__interval">2019/6<br>-2019/8</span>
                 <span class="event__detail">
-                    本科生科研项目：医学超声背散射图像的频谱分析*
-                    <br>由光学与电子信息学院朱本鹏教授指导。国家级大学生创新项目
+                    全栈实习生，江苏国泰新点软件
+                    <ul class="tasks">
+                        <li>Java语言学习、Web项目实战</li>
+                        <li>政务大数据前端界面开发</li>
+                    </ul>
+                </span>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h1>项目</h1>
+        <ul class="list list--bare">
+            <li class="event event--highlighted">
+                <span class="event__interval">2019/10</span>
+                <span class="event__detail">
+                    <code>steve</code>，计算机图形学课程项目
+                    <ul class="tasks">
+                        <li>用TypeScript实现了基于WebGL的简单3D图形库、可自定义时间函数、帧率无关的动画系统</li>
+                        <li>基于Phong、Gourand着色模型和Phong、Blinn-Phong光照模型的GLSL着色器编程</li>
+                    </ul>
+                    <!-- * Repository: <a href="http://github.com/aiifabbf/steve">http://github.com/aiifabbf/steve</a> -->
+                </span>
+            </li>
+            <li class="event event--highlighted">
+                <span class="event__interval">2020/1</span>
+                <span class="event__detail">
+                    <code>simple-tcp</code>，计算机网络课程项目
+                    <ul class="tasks">
+                        <li>用Python实现了基于UDP的类TCP可靠传输协议</li>
+                        <li>用延迟ACK、数据包聚合、Nagle算法、校验码等优化性能</li>
+                        <li>基于互斥锁的多线程并行结构、后台发送、后台接收</li>
+                    </ul>
+                    <!-- * Repository: <a href="http://github.com/aiifabbf/steve">http://github.com/aiifabbf/steve</a> -->
+                </span>
+            </li>
+            <li class="event event--highlighted">
+                <span class="event__interval">2018/10<br>-2019/5</span>
+                <span class="event__detail">
+                    模拟电路自动化设计工具<code>sizer</code>，本科毕业设计项目
+                    <ul class="tasks">
+                        <li>Python实现的实时波形数据导入、波形分析、参数提取（平均每个波形<strong>≈50 μs</strong>）
+                        </li>
+                        <li><strong>5分钟</strong>内即可自动计算出10个晶体管放大器的最优参数
+                        </li>
+                        <li>编写了可重用的轻量工具，方便读取电路网表、指定约束</li>
+                    </ul>
+                </span>
+            </li>
+            <!-- <li class="event event--highlighted">
+                <span class="event__interval">2017/10-<br>2019/3</span>
+                <span class="event__detail">
+                    本科生科研项目：医学超声背散射图像的频谱分析
                     <ul class="tasks">
                         <li>图像预处理：噪声去除、扇形图到矩形图的变换</li>
                         <li>统计特征提取、分析，使用统计特征离散化取值重建图像</li>
                         <li>代码优化、从Matlab移植到Python，处理速度提升11倍</li>
                     </ul>
-                    *详情可访问 <a href="https://aiifabbf.github.io/cv/lab-zhu">https://aiifabbf.github.io/cv/lab-zhu</a>
                 </span>
-            </li>
+            </li> -->
             <li class="event event--highlighted">
-                <span class="event__interval">2018/5-</span>
+                <span class="event__interval">2018/5<br>-2019/4</span>
                 <span class="event__detail">
-                    本科生科研项目：高热导率、高介电常数薄膜材料开发*
-                    <br>由光学与电子信息学院傅邱云教授指导
+                    本科生科研项目：高热导率、高介电常数薄膜材料开发
                     <ul class="tasks">
                         <li>薄膜温度场及其在稳定热源下随时间演化的数值仿真。使用Scipy实现</li>
                         <li>动态数据可视化，浏览任意时刻的样品温度场分布。使用Matplotlib实现</li>
+                        <li>三作论文已发表 <a
+                                href="https://doi.org/10.1016/j.compscitech.2019.107934"><code>doi: 10.1016/j.compscitech.2019.107934</code></a>
+                        </li>
                     </ul>
-                    *详情可访问 <a href="https://aiifabbf.github.io/cv/lab-fu">https://aiifabbf.github.io/cv/lab-fu</a>
                 </span>
             </li>
-            <li class="event event--highlighted">
+            <li class="event">
+                <span class="event__interval">2019/11</span>
+                <span class="event__detail event--highlighted">
+                    <code>nu-hub</code>，数据库课程项目
+                    <ul class="tasks">
+                        <li>SQL编程：查询、触发器、事务、子过程</li>
+                        <li>用Python实现了基于<code>ncurses</code>的字符界面</li>
+                    </ul>
+                </span>
+            </li>
+            <!-- <li class="event event--highlighted">
                 <span class="event__interval">2017/2-2017/10</span>
                 <span class="event__detail">
                     本科生科研项目：二级运算放大器结构的研究
@@ -124,7 +226,7 @@
                 <span class="event__detail">
                     助教志愿者，EF英孚教育
                 </span>
-            </li>
+            </li> -->
             <!-- <li class="event event--highlighted">
                 <span class="event__interval">2018/7</span>
                 <span class="event__detail">
@@ -134,7 +236,7 @@
         </ul>
     </section>
 
-    <section>
+    <!-- <section>
         <h1>奖项</h1>
         <ul class="list list--bare">
             <li class="event">
@@ -164,30 +266,30 @@
                 </span>
             </li>
         </ul>
-    </section>
+    </section> -->
 
     <section>
-        <h1>能力</h1>
+        <h1>技能</h1>
         <ul class="list list--bare list--columned">
             <li class="skill">
                 <h2 class="skill__category">编程</h2>
                 <ul class="skill__list">
-                    <li>较熟悉Python, C, 了解Java, JavaScript, Rust</li>
-                    <li>熟悉LaTeX, HTML, CSS</li>
-                    <li>Leetcode已完成400题*</li>
+                    <li>熟悉Python、C、JavaScript、SQL、CSS</li>
+                    <li>了解Java、TypeScript、Rust、C++</li>
+                    <li>了解<strong>Flask、SQLAlchemy、Vue.js</strong></li>
+                    <li>熟悉<strong>Numpy、Scipy、Pandas、Matplotlib</strong></li>
+                    <li>Leetcode已完成600题*、周赛全球排名前4%</li>
                 </ul>
-                *Leetcode个人首页 <a href="https://leetcode.com/aiifabbf/">https://leetcode.com/aiifabbf/</a>
-                <br>代码及题解 <a
-                    href="https://github.com/aiifabbf/leetcode-memo">https://github.com/aiifabbf/leetcode-memo</a>
+
             </li>
-            <li class="skill" style="page-break-inside: avoid;">
+            <!-- <li class="skill" style="page-break-inside: avoid;">
                 <h2 class="skill__category">Python科学计算</h2>
                 <ul class="skill__list">
                     <li>Numpy, Pandas数据处理</li>
                     <li>Scipy科学计算，Matplotlib绘图</li>
                     <li>了解并行、分布式计算</li>
                 </ul>
-            </li>
+            </li> -->
             <!-- <li class="skill">
                 <h2 class="skill__category">VLSI Design</h2>
                 <ul class="skill__list">
@@ -212,6 +314,7 @@
                     </li>
                 </ul>
             </li>
+            *Leetcode个人首页 <a href="https://leetcode.com/aiifabbf/">https://leetcode.com/aiifabbf/</a>
         </ul>
     </section>
 
