@@ -37,7 +37,8 @@ body {
 a {
     text-decoration: none;
     color: black;
-    font-family: 'Ubuntu Mono', monospace;
+    /* font-family: 'Ubuntu Mono', monospace; */
+    font-family: inherit;
 }
 
 h1 {
