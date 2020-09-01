@@ -2,3 +2,34 @@ html {
     font-family: 'Source Han Serif SC', serif;
     font-weight: normal;
 }
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.general {
+    width: 100%;
+}
+
+.hard {
+    box-sizing: border-box;
+    width: 33%;
+    padding-right: 1em;
+}
+
+.soft {
+    box-sizing: border-box;
+    width: 67%;
+    padding-left: 1em;
+}
+
+.event--highlighted {
+    border: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.courses {
+    column-count: 2;
+}

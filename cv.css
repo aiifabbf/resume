@@ -87,6 +87,7 @@ code {
     order: 2;
     font-weight: 900;
     white-space: nowrap;
+    text-align: right;
 }
 
 .event__detail {
