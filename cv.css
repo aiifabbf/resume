@@ -1,13 +1,10 @@
 @media print {
     @page {
-        /* margin: 5mm 10mm; */
-        margin: 0;
-        padding: 0;
+        margin: 10mm 0mm;
     }
 
-    /* turn off body padding in print. */
     body {
-        padding: 5mm 10mm;
+        padding: 0 10mm;
     }
 }
 
@@ -18,14 +15,16 @@
     }
 
     /* scratch outline on for debugging. */
-    *, *:before, *:after {
+    *,
+    *:before,
+    *:after {
         outline: 1px solid gray;
     }
 }
 
 html {
     font-size: 10pt;
-    font-family: 'Computer Modern Serif', serif;
+    font-family: "Bookerly", serif;
     margin: 0;
     padding: 0;
 }
@@ -52,7 +51,7 @@ h2 {
 /* if not specified, li markers should be disc. */
 ul {
     list-style-type: disc;
-    padding-left: 2rem;
+    padding-left: 2ch;
 }
 
 sup {
@@ -60,16 +59,12 @@ sup {
 }
 
 code {
-    font-family: 'Ubuntu Mono', monospace;
-}
-
-.list {
-    padding: 0;
-    list-style-position: inside;
+    font-family: "Fira Code", monospace;
 }
 
 .list--bare {
     list-style: none;
+    padding: 0;
 }
 
 .list--columned {
@@ -149,8 +144,9 @@ code {
     top: 0;
 }
 
-.mail__link, .site__link {
-    font-family: 'Ubuntu Mono', 'Courier New', Courier, monospace;
+.mail__link,
+.site__link {
+    font-family: "Fira Code", "Courier New", Courier, monospace;
 }
 
 .skill {
@@ -182,4 +178,10 @@ code {
 
 .bibliography__item__detail {
     margin-left: 1rem;
+}
+
+@media print {
+    .page-break {
+        break-after: page;
+    }
 }
