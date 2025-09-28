@@ -1,12 +1,12 @@
 html {
-    font-family: 'Source Han Serif SC', serif;
+    font-family: "Bookerly", "Source Han Serif SC", serif;
     font-weight: normal;
 }
 
-body {
+/*body {
     display: flex;
     flex-wrap: wrap;
-}
+}*/
 
 .general {
     width: 100%;
